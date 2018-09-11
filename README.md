@@ -18,4 +18,6 @@ gradlew eclipse      (on Windows)
 
 Import the project into Eclipse : File -> Import -> General -> Existing project into workspace ... select the project directory
 
-Launch the main program : 
+Launch the main program :  CarService/src/main/java/com/example/CarRental/CarRentalApplication.java 
+
+Test the web service inside a web browser : http://localhost:8080/cars
