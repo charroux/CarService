@@ -20,9 +20,7 @@ Open a web browser to test the http get request: http://localhost:8080/cars
 
 # Java Rest client
 
-Launch the main program: https://githu
-
-The html part: https://github.com/charroux/CarService/tree/master/src/main/webapp/staticb.com/charroux/CarService/blob/master/src/main/java/com/example/CarRental/CarRentalClient.java
+Launch the main program: https://github.com/charroux/CarService/blob/master/src/main/java/com/example/CarRental/CarRentalClient.java
 
 # Javascript client
 
