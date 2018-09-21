@@ -1,4 +1,4 @@
-# CarRental
+# CarRental Rest Web Service with Spring
 
 Download and unzip the project (outside the Eclipse workspace)
 
