@@ -1,6 +1,6 @@
-# CorrectionWebServiceJPA
+# CarRental
 
-Télécharger et décompresser HSQLBD : https://sourceforge.net/projects/hsqldb/files/hsqldb/hsqldb_1_8_1/
+DownloadTélécharger et décompresser HSQLBD : https://sourceforge.net/projects/hsqldb/files/hsqldb/hsqldb_1_8_1/
 
 Démarrer la base de données (dans dossier lib d'hsqldb) : java -cp hsqldb.jar org.hsqldb.Server
 
