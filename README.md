@@ -1,23 +1,18 @@
 # CarRental
 
-DownloadTélécharger et décompresser HSQLBD : https://sourceforge.net/projects/hsqldb/files/hsqldb/hsqldb_1_8_1/
+Download and unzip the project (outside the Eclipse workspace)
 
-Démarrer la base de données (dans dossier lib d'hsqldb) : java -cp hsqldb.jar org.hsqldb.Server
+Open a command line window (project location).
 
-Démarrer l'outil d'inspaction de la base de données (dans dossier lib d'hsqldb) : java -cp hsqldb.jar org.hsqldb.util.DatabaseManagerSwing
-Se connecter au type server.
+Use the following command to build the project (download libraries, compilation…):
+-	gradlew build			under windows
+-	./gradlew build			under Linux
 
-Build de l'application : ./gradlew build    sous Linux ou   gradlew build   sous Windows
+Use the following command to convert the project in an Eclipse project:
+-	gradlew eclipse			under windows
+-	./gradlew eclipse		under Linux
 
-Convertion en un projet Eclipse : ./gradlew eclise    sous Linux ou   gradlew eclipse   sous Windows
+Import the project under Eclipse: File->Import->General-> Existing project into workspace ... select the project directory
 
-Importation sous Eclipse : File ->  Import -> General -> Existing project into werokspace...
-
-Lancer le main de création de la base : https://github.com/charroux/CorrectionWebServiceJPA/blob/master/src/main/java/com/univ/model/Main.java
-
-Lancer le Web Service : https://github.com/charroux/CorrectionWebServiceJPA/blob/master/src/main/java/com/univ/CorrectionWebServiceJpaApplication.java
-
-Tester le get : http://localhost:8080/cars
-
-Tester le put sur l'URL (avec RestCleitn par exemple) : http://localhost:8080/cars/11AA22?louer=true
+Launch the main program: /src/main/java/package…/*Application.java
 

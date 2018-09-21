@@ -41,4 +41,9 @@ public class Car {
 		this.price = price;
 	}
 
+	@Override
+	public String toString() {
+		return "Car [plateNumber=" + plateNumber + ", brand=" + brand + ", price=" + price + "]";
+	}
+
 }
