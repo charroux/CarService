@@ -18,6 +18,16 @@ Launch the main program: https://github.com/charroux/CarService/blob/master/src/
 
 Open a web browser to test the http get request: http://localhost:8080/cars
 
+# Test with curl
+
+curl -X GET -i http://localhost:8080/cars
+
+curl -X POST -H 'Content-Type: application/json' -i http://localhost:8080/cars --data '{"plateNumber":"55DD77", "brand": "Mazerati", "price":2000, "rent":false}'
+
+curl -X PUT -H 'Content-Type: application/json' -i 'http://localhost:8080/cars/11AA22?rent=true' --data '{"begin":"5/5/2025", "end": "7/5/2025"}'
+
+curl -X PUT -H 'Content-Type: application/json' -i 'http://localhost:8080/cars/11AA22?rent=false'
+
 # Java Rest client
 
 Launch the main program: https://github.com/charroux/CarService/blob/master/src/main/java/com/example/CarRental/CarRentalClient.java
