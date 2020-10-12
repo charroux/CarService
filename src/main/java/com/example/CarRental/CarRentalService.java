@@ -30,7 +30,6 @@ public class CarRentalService {
 	}
 
 	@GetMapping("/cars/{plateNumber}")
-	@ResponseStatus(HttpStatus.OK)
 	public Car getCar(@PathVariable(value = "plateNumber") String plateNumber){
 		for(Car car: cars){
 			if(car.getPlateNumber().equals(plateNumber)){
