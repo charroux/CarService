@@ -18,20 +18,18 @@ public class CarRentalService {
 		cars.add(new Car("33BB44", "Porshe", 2222));
 	}
 	
-	@RequestMapping(value="/cars", method=RequestMethod.GET) 
-	@ResponseStatus(HttpStatus.OK) 
+	@GetMapping("/cars")
 	public List<Car> getListOfCars(){
 		return cars;
 	}
 	
-	@RequestMapping(value = "/cars", method = RequestMethod.POST)
-	@ResponseStatus(HttpStatus.OK)
+	@PostMapping("/cars")
 	public void addCar(@RequestBody Car car) throws Exception{
 		System.out.println(car);
 		cars.add(car);
 	}
 
-	@RequestMapping(value = "/cars/{plateNumber}", method = RequestMethod.GET)
+	@GetMapping("/cars/{plateNumber}")
 	@ResponseStatus(HttpStatus.OK)
 	public Car getCar(@PathVariable(value = "plateNumber") String plateNumber){
 		for(Car car: cars){
