@@ -20,11 +20,19 @@ https://github.com/charroux/CarService/blob/master/src/main/java/com/example/Car
 
 # Test with curl
 
+Get a the list of cars :
+
 curl -X GET -i http://localhost:8080/cars
+
+Add a new car :
 
 curl -X POST -H 'Content-Type: application/json' -i http://localhost:8080/cars --data '{"plateNumber":"55DD77", "brand": "Mazerati", "price":2000, "rent":false}'
 
+Rent a car : 
+
 curl -X PUT -H 'Content-Type: application/json' -i 'http://localhost:8080/cars/11AA22?rent=true' --data '{"begin":"5/5/2025", "end": "7/5/2025"}'
+
+Get back z car :
 
 curl -X PUT -H 'Content-Type: application/json' -i 'http://localhost:8080/cars/11AA22?rent=false'
 
