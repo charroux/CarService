@@ -1,18 +1,14 @@
-# CarRental Rest Web Service with Spring
+# CarRental Rest Web Service with Spring boot
 
 Download and unzip the project (outside the Eclipse workspace)
 
-Open a command line window (project location).
+## Importation
 
-Use the following command to build the project (download libraries, compilation…):
--	gradlew build			    	under windows
--	./gradlew build			    	under Linux
+Under Eclipse : File -> Import -> Gradle ...
 
-Use the following command to convert the project in an Eclipse project:
--	gradlew eclipse					under windows
--	./gradlew eclipse				under Linux
+Under Intellij : open
 
-Import the project under Eclipse: File->Import->General-> Existing project into workspace ... select the project directory
+## Launching
 
 Launch the main program: https://github.com/charroux/CarService/blob/master/src/main/java/com/example/CarRental/CarRentalApplication.java
 
