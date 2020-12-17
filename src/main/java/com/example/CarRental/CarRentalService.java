@@ -21,13 +21,6 @@ public class CarRentalService {
 	
 	@GetMapping("/cars")
 	public List<Car> getListOfCars(){
-		
-		RestTemplate restTemplate = new RestTemplate();
-		
-        List cars = restTemplate.getForObject("http://localhost:8080/voitures", List.class);
-		
-        System.out.println("Premier WS retourne : " + cars);
-        
 		return cars;
 	}
 	
