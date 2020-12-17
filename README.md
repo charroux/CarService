@@ -14,6 +14,10 @@ Launch the main program: https://github.com/charroux/CarService/blob/master/src/
 
 Open a web browser to test the http get request: http://localhost:8080/cars
 
+## The Web Service
+
+https://github.com/charroux/CarService/blob/master/src/main/java/com/example/CarRental/CarRentalService.java
+
 # Test with curl
 
 curl -X GET -i http://localhost:8080/cars
