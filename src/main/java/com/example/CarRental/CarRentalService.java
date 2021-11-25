@@ -8,6 +8,7 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.server.ResponseStatusException;
 
 @RestController
 public class CarRentalService {
@@ -39,6 +40,23 @@ public class CarRentalService {
 		}
 		return null;
 	}
-	
+
+	@PutMapping(value = "/cars/{plateNumber}")
+	public void rent(@PathVariable("plateNumber") String plaque,
+					 @RequestParam(value="rent", required = true)boolean rented,
+					 @RequestBody(required = false) Dates dates){
+		System.out.println(plaque);
+		System.out.println(rented);
+		System.out.println(dates);
+		// parcourir le tablea à la recherche d'une voiture de plaque plaque
+		// si voiture trouvé
+		//		si rented = true => louer
+		//		sinon ramener
+		// si voiture non trouvé
+		// 	envoyer HttsStattus NOT-FOUND
+		if(rented == false){
+			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Foo Not Found");
+		}
+	}
 
 }
